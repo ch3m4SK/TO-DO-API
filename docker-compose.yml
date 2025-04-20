@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  web:
+  api:
     build: .
     ports:
       - "5000:5000"
     volumes:
-      - .:/app  # Monta el código fuente para desarrollo
+      - .:/app
     environment:
       - FLASK_ENV=development
